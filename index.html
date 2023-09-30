@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <script src="https://kit.fontawesome.com/0bef993f2a.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
+  <div class="container">
+    <img src="images/logo.svg">
 
-  <img src="images/logo.svg">
+    <h1>We are launching <bold>soon!</bold></h1>
 
-  <h1>We are launching <bold>soon!</bold></h1>
+    <h2>Subscribe and get notified</h2>
 
-  <h2>Subscribe and get notified</h2>
+    <form id="form">
+      <label for="email"></label>
+      <input type="text" name="email" id="email" placeholder="Your email address">
+      <input type="submit" value="Notify Me" id="submit">
+    </form>
 
-  <form>
-    <label for="email"></label>
-    <input type="text" name="email" id="email" placeholder="Your email address">
-    <input type="submit" value="Notify Me">
-  </form>
-
-  <img src="images/illustration-dashboard.png">
-
-  <i class="fi fi-brands-twitter"></i>
-  <i class="fi fi-brands-facebook"></i>
-  <i class="fi fi-brands-instagram"></i>
-  &copy; Copyright Ping. All rights reserved.
-
+    <img src="images/illustration-dashboard.png" id="chart">
+    <div class="icons">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+    &copy; Copyright Ping. All rights reserved.
+  </div>
   <footer>
   </footer>
 </body>
