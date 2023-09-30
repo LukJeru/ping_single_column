@@ -26,46 +26,53 @@ body{
 #email{
   border-radius: 2rem;
   width: 25rem;
-  border-color: hsl(0, 0%, 59%);
+  border-color: var(--gray);
 }
 
 #submit{
-  background-color: hsl(223, 87%, 63%);
+  background-color: var(--blue);
   color: white;
   border: none;
   border-radius: 2rem;
   width: 10rem;
 }
 
-#copyright{
 
+/*colors*/
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale_blue: hsl(223, 100%, 88%);
+  --light_red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very_dar_blue: hsl(209, 33%, 12%);
 }
 
 /*font*/
 
 h1{
-  color: hsl(0, 0%, 59%);
+  color: var(--gray);
   font-weight: 300;
 }
 
 h2{
   font-weight: 600;
-  color: hsl(0, 0%, 59%);
+  color: var(--gray);
   font-size: 1.3rem;
 }
 
 bold{
   font-weight: 700;
-  color: hsl(209, 33%, 12%);
+  color: var(--very_dark_blue);
 }
 
 p{
   font-weight: 300;
-  color: hsl(0, 0%, 59%);
+  color: var(--gray);
 }
 
 /*icons*/
 .icons{
   display: inline-flex;
-  color: hsl(223, 87%, 63%);
+  color: var(--blue);
 }
