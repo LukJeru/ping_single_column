@@ -11,10 +11,6 @@ body{
   width: 40rem;
 }
 
-.icons{
-  display: inline-flex;
-}
-
 #chart{
   width: 100%;
 }
@@ -30,6 +26,7 @@ body{
 #email{
   border-radius: 2rem;
   width: 25rem;
+  border-color: hsl(0, 0%, 59%);
 }
 
 #submit{
@@ -38,4 +35,37 @@ body{
   border: none;
   border-radius: 2rem;
   width: 10rem;
+}
+
+#copyright{
+
+}
+
+/*font*/
+
+h1{
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+h2{
+  font-weight: 600;
+  color: hsl(0, 0%, 59%);
+  font-size: 1.3rem;
+}
+
+bold{
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+
+p{
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+/*icons*/
+.icons{
+  display: inline-flex;
+  color: hsl(223, 87%, 63%);
 }
