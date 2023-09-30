@@ -28,12 +28,12 @@ body{
 #email{
   border-radius: 2rem;
   width: 18rem;
-  border-color: var(--gray_input);
+  border-color: var(--pale_blue);
   padding-left: 1.5rem;
 }
 
 #email::placeholder{
-  color: var(--gray_input);
+  color: var(--pale_blue);
   font-weight: 300;
 }
 
@@ -53,7 +53,6 @@ body{
   --pale_blue: hsl(223, 100%, 88%);
   --light_red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
-  --gray_input: hsla(0, 0%, 59%, 0.3);
   --very_dar_blue: hsl(209, 33%, 12%);
 }
 
@@ -80,7 +79,7 @@ bold{
 
 p{
   font-weight: 300;
-  color: var(--gray);
+  color: var(--pale_blue);
 }
 
 /*icons*/
@@ -96,4 +95,44 @@ p{
   border: 1px solid var(--gray_input);
   padding: .5rem;
   border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  .container{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 3rem auto;
+    width: 80%;
+
+  }
+
+  #form{
+    display: inline-flex;
+    flex-direction: column;
+    width: 90%;
+    height: 8rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+  #email{
+    border-radius: 2rem;
+    width: 80%;
+    border-color: var(--pale_blue);
+    padding-left: 1.6rem;
+    height: 2.8rem;
+  }
+
+  #submit{
+    background-color: var(--blue);
+    color: white;
+    font-weight: 300;
+    Font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    width: 89%;
+    height: 2.8rem;
+  }
+
 }
