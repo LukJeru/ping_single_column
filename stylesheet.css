@@ -1,5 +1,5 @@
 body{
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Libre Franklin"
 }
 
@@ -7,8 +7,9 @@ body{
   display: flex;
   flex-direction:column;
   align-items: center;
-  margin: 0 auto;
-  width: 40rem;
+  margin: 3rem auto;
+  width: 30rem;
+
 }
 
 #chart{
@@ -21,12 +22,19 @@ body{
   justify-content:space-between;
   margin: 0 auto;
   height: 3rem;
+  margin-bottom: 3rem;
 }
 
 #email{
   border-radius: 2rem;
-  width: 25rem;
-  border-color: var(--gray);
+  width: 18rem;
+  border-color: var(--gray_input);
+  padding-left: 1.5rem;
+}
+
+#email::placeholder{
+  color: var(--gray_input);
+  font-weight: 300;
 }
 
 #submit{
@@ -34,7 +42,7 @@ body{
   color: white;
   border: none;
   border-radius: 2rem;
-  width: 10rem;
+  width: 8rem;
 }
 
 
@@ -45,6 +53,7 @@ body{
   --pale_blue: hsl(223, 100%, 88%);
   --light_red: hsl(354, 100%, 66%);
   --gray: hsl(0, 0%, 59%);
+  --gray_input: hsla(0, 0%, 59%, 0.3);
   --very_dar_blue: hsl(209, 33%, 12%);
 }
 
@@ -53,12 +62,15 @@ body{
 h1{
   color: var(--gray);
   font-weight: 300;
+  margin-top: 3rem;
 }
 
 h2{
   font-weight: 600;
   color: var(--gray);
-  font-size: 1.3rem;
+  font-size: 1rem;
+  position: relative;
+  bottom: 2rem;
 }
 
 bold{
@@ -74,5 +86,14 @@ p{
 /*icons*/
 .icons{
   display: inline-flex;
+  justify-content: space-between;
+  width: 25%;
   color: var(--blue);
+  margin-top: 3rem;
+}
+
+#twitter, #facebook, #instagram{
+  border: 1px solid var(--gray_input);
+  padding: .5rem;
+  border-radius: 1.5rem;
 }
