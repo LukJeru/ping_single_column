@@ -22,7 +22,6 @@ body{
   justify-content:space-between;
   margin: 0 auto;
   height: 3rem;
-  margin-bottom: 3rem;
 }
 
 #email{
@@ -48,6 +47,14 @@ body{
 
 #submit:hover{
   cursor: pointer;
+}
+
+.error {
+  justify-content: left;
+  width: 100%;
+  padding-left: 2.5rem;
+  position: relative;
+  bottom: .5rem;
 }
 
 
@@ -85,6 +92,12 @@ bold{
 p{
   font-weight: 300;
   color: var(--pale_blue);
+}
+
+#errorMessage{
+  color: var(--light_red);
+  font-size: .9rem;
+  visibility: hidden;
 }
 
 /*icons*/
