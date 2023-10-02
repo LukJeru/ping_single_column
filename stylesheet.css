@@ -25,9 +25,9 @@ body{
 }
 
 #email{
+  border: 1px solid var(--pale_blue);
   border-radius: 2rem;
   width: 18rem;
-  border-color: var(--pale_blue);
   padding-left: 1.5rem;
 }
 
@@ -142,8 +142,13 @@ p{
     border-radius: 2rem;
     width: 80%;
     border-color: var(--pale_blue);
-    padding-left: 1.6rem;
     height: 2.8rem;
+    padding-left: 0;
+  }
+
+  #email::placeholder {
+    position: relative;
+    left: 1.6rem;
   }
 
   #submit{
@@ -153,7 +158,7 @@ p{
     Font-size: 1rem;
     border: none;
     border-radius: 2rem;
-    width: 89%;
+    width: 80%;
     height: 2.8rem;
   }
 

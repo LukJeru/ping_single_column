@@ -5,7 +5,7 @@ function emailCheck(event) {
   if (!re.test(email.value)){
     email.style.borderColor = "#ff5263"
     document.getElementById("errorMessage").style.visibility = "visible";
-    if(window.screen.availWidth < 780) {
+    if(window.innerWidth <= 780) {
       document.getElementById("errorMessage").style.position = "relative";
       document.getElementById("errorMessage").style.bottom = "8.2rem";
       document.getElementById("submit").style.position = "relative";
